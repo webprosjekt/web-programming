@@ -10,7 +10,13 @@
 
 <body>
 
-<p>Hello World</p>
+<p id="hello">Hello World</p>
+
+<script type="text/javascript" charset="utf-8">
+	txt = document.getElementById("hello").innerHTML;
+//	document.getElementById("hello").innerHTML = "Test"
+	document.write("<p>ID hello inneholder <q>" + txt + "</q>.</p>");
+</script>
 
 <script type="text/javascript" charset="utf-8">
 	document.write("<p>Simen was here...</p>");
