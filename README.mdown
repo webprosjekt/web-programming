@@ -1,0 +1,18 @@
+Web-prosjekt 2010
+==================
+
+Dette er filene som ble demonstrert i timen om web-programmering. Det er fire filer her:
+
+* index.phtml
+	* Inneholder det vi gikk gjennom av PHP i timen
+* side2.phtml
+	* Inneholder det vi gikk gjennom av JavaScript i timen, samt en footer som blir inkludert via PHP. Den siste ble ikke gjennomgått i timen
+* side3.html
+	* Denne filen inneholder noen flere eksempler på hvordan man bruker JavaScript. Dette ble ikke gjennomgått i timen, men skulle være mulig å forstå
+* footer.html
+	* Det som blir inkludert som footer til filene som bruker den.
+	
+Det er mulig å sjekke ut filene med vanlig git fra kommandolinjen. Hvis du har en egen GitHub-konto kan du lage en "fork" (clone) av prosjektet via GitHub og jobbe mot denne. Du må fortsatt clone en versjon til din lokale maskin via kommandolinjen. 
+
+Ellers, hvis det er noen spørsmål eller kommentarer er det bare å spørre.
+
