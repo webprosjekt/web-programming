@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="mycss.css" />
+
+	<title>untitled</title>
+	
+	<script type="text/javascript" charset="utf-8">
+		var counter = 0;
+
+		function addEnding() {
+			if (counter != 1) {
+				document.getElementById("ending").innerHTML = "er";
+			} else {
+				document.getElementById("ending").innerHTML = "";				
+			}
+		}
+
+		function increaseCounter()
+		{
+			counter = counter + 1;
+			document.getElementById("clickedLink").firstChild.nodeValue = counter;
+			addEnding();
+		};
+		
+		function hooverCounter()
+		{
+			counter = counter + 0.5;
+			document.getElementById("clickedLink").firstChild.nodeValue = counter;
+			addEnding();
+		};
+		
+		function unHooverCounter()
+		{
+			counter = counter - 0.5;
+			document.getElementById("clickedLink").firstChild.nodeValue = counter;
+			addEnding();
+		};
+
+		var i = 0;
+		function changeBackground()
+		{
+			if (i == 0) {
+				i = 1;
+		  		document.body.style.background="#FFCC80";
+			} else {
+				i = 0;
+		  		document.body.style.background="#FFFFFF";
+			}
+		};
+		
+	</script>
+	
+</head>
+
+<body>
+
+	<?php include "header.html" ?>
+
+<h1>Side 2</h1>
+
+	<script type="text/javascript" charset="utf-8">
+	      document.write("<p style=\"background: lime\">Simen Hagen<p>");
+	</script>
+
+	<script type="text/javascript">
+	function changeText()
+	{
+		document.getElementById("p1").innerHTML="This text was changed by the script";
+	}
+	</script>
+
+	<p id="p1" onClick="changeText()">Hello World!</p>
+
+<p>
+	<input type="button" value="Change Text" onClick="changeText()"></input>
+</p>
+
+
+	<p>
+	<script type="text/javascript" charset="utf-8">
+		for (i = 0; i < 10; i++) {
+			document.write("Line number " + i + " <br/>");
+		}
+	</script>
+	</p>
+
+	<p>
+		Du har <a href="#" onmouseover="hooverCounter()" onmouseout="unHooverCounter()" 
+						onclick="increaseCounter()">trykket</a> <span id="clickedLink">0</span> 
+		gang<span id="ending">er</span>
+		på denne linken.
+	</p>
+
+<p>Bytt <a href="#" onClick="changeBackground()">bakgrunnen</a>.</p>
+
+<?php include "footer.html" ?>
+
+</body>
+</html>
